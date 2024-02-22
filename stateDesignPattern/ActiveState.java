@@ -14,6 +14,7 @@ public class ActiveState implements AccountState{
 
     @Override
     public void activateState(Account account) {
+        account.setAccountState(new ActiveState());
         System.out.println("Account is already activated!");
     }
 
@@ -24,6 +25,7 @@ public class ActiveState implements AccountState{
 
     @Override
     public void closeState(Account account) {
+        account.setAccountState(new ClosedState());
         System.out.println("Account is closed!");
     }
 }

@@ -1,12 +1,7 @@
 public class AccountTest {
     public static void main(String[] args) {
         Account myAccount = new Account("1234", 10000.0);
-        myAccount.activate();
-
-        //Suspend the account
-        myAccount.suspend();
-
-        //Activate the account
+       
         myAccount.activate();
 
         //Deposit to the account
@@ -14,6 +9,11 @@ public class AccountTest {
 
         //Withdraw to the account
         myAccount.withdraw(100.0);
+        
+        //Suspend the account
+        myAccount.suspend();
+
+        myAccount.activate();
 
         //Close the account()
         myAccount.close();
@@ -22,7 +22,7 @@ public class AccountTest {
         myAccount.activate();
 
         //Suspend the account
-        myAccount.activate();
+        myAccount.suspend();
 
         //Withdraw to the account
         myAccount.withdraw(500.0);

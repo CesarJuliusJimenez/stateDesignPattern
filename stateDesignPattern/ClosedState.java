@@ -12,12 +12,12 @@ public class ClosedState implements AccountState {
 
     @Override
     public void activateState(Account account) {
-        System.out.println("Account is already activated!");
+        System.out.println("You cannot activate a closed account");
     }
 
     @Override
     public void suspendState(Account account) {
-        System.out.println("Account is suspended!");
+        System.out.println("You cannot suspend a closed account");
     }
 
     @Override
